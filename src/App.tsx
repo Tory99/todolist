@@ -1,6 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TodoList from './Todolist';
+import Timer from './Timer';
+import React from 'react';  
+import { useState } from 'react';
 
 function App() {
   let name = "react";
@@ -11,9 +13,8 @@ function App() {
 
   return (
     <div className="App-header">
-      <h1 style={style}>Hello, {
-        name === 'react' ? name : 'no'
-      }</h1>
+      <TodoList />
+      <Timer />
     </div>
   );
 }
